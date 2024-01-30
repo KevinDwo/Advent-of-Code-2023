@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="980d034f-f36e-4391-a677-21e0a4baab11" name="Changes" comment="Adding day 2">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="980d034f-f36e-4391-a677-21e0a4baab11" name="Changes" comment="Reading file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reading.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Aoc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/Input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2/Input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/src/Reading.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2/src/Reading.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +50,19 @@
       <updated>1705269700080</updated>
       <workItem from="1705269701415" duration="299000" />
       <workItem from="1705270882555" duration="720000" />
+      <workItem from="1705271622871" duration="108000" />
+      <workItem from="1705685611116" duration="18000" />
+      <workItem from="1706485303684" duration="3183000" />
+      <workItem from="1706648199266" duration="1695000" />
     </task>
+    <task id="LOCAL-00001" summary="Reading file">
+      <created>1705271709460</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271709460</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -71,6 +81,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding day 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding day 2" />
+    <MESSAGE value="Reading file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reading file" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Day 2/src/Reading.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="sum" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Advent_of_Code_2023$Main.ic" NAME="Main Coverage Results" MODIFIED="1706487313606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
