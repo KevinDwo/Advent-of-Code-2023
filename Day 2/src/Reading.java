@@ -33,9 +33,10 @@ public class Reading {
                     } catch (Exception e) {
                         break;
                     }
-                    sectionNumber = line.indexOf(";", sectionNumber + 1);
+                    sectionNumber = line.indexOf(";", sectionNumber) + 1;
                     if (!testPossible(currentSection)){
                         possible = false;
+                        break;
                     }
                 }
 
@@ -53,18 +54,33 @@ public class Reading {
     }
 
     public boolean testPossible(String line){
-        if(line.contains("red") && (int) line.charAt(line.indexOf("red") - 2) > red){
-            char test = (line.charAt(line.indexOf("red") - 2));
-            System.out.println(test + " rot ");
-            return false;
+        int value;
+        if(line.contains("red")){
+            value = getNumber(line, line.indexOf("red"));
+            if(value > red){
+                return false;
+            }
         }
-        if(line.contains("green") && (int) line.charAt(line.indexOf("green") - 2) > green){
-            return false;
+        if(line.contains("blue")){
+            value = getNumber(line, line.indexOf("blue"));
+            if(value > blue){
+                return false;
+            }
         }
-        if(line.contains("blue") && (int) line.charAt(line.indexOf("blue") - 2) > blue){
-            return false;
+        if(line.contains("green")){
+            value = getNumber(line, line.indexOf("green"));
+            if(value > green){
+                return false;
+            }
         }
-
         return true;
+    }
+
+    public int getNumber(String line, int position){
+
+        if(line.charAt(position - 3) == ' '){
+            return Character.getNumericValue(line.charAt(position - 2));
+        }
+        return Integer.parseInt(line.substring(position - 3, position - 1));
     }
 }
